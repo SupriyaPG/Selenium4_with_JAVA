@@ -127,5 +127,5 @@ This project is licensed under the MIT License.
 
 ## 📞 Contact
 For queries or discussions, reach out via:
-- LinkedIn: [Your Profile](https://linkedin.com/in/SupriyaGaikwad)
+- LinkedIn: [Your Profile](https://linkedin.com/in/supriyagaikwad369)
 - GitHub: [Your GitHub](https://github.com/SupriyaPG)
