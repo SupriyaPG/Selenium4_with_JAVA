@@ -94,24 +94,20 @@ Before getting started, ensure you have the following installed:
 ---
 
 ## 🛠 Installation Guide
-1. Clone the repository:
-   ```sh
-   git clone https://github.com/pramoddutta/selenium-learning-guide.git
-   ```
-2. Open the project in Eclipse/IntelliJ
-3. Install dependencies using Maven:
+1. Open the project in Eclipse/IntelliJ
+2. Install dependencies using Maven:
    ```sh
    mvn clean install
    ```
-4. Run the test cases:
+3. Run the test cases:
    ```sh
    mvn test
    ```
-5. Generate Allure Report:
+4. Generate Allure Report:
    ```sh
    mvn allure:serve
    ```
-6. View test results in Jenkins (if configured)
+5. View test results in Jenkins (if configured)
 
 ---
 
@@ -127,5 +123,5 @@ This project is licensed under the MIT License.
 
 ## 📞 Contact
 For queries or discussions, reach out via:
-- LinkedIn: [Your Profile](https://linkedin.com/in/SupriyaGaikwad)
+- LinkedIn: [Your Profile](https://linkedin.com/in/supriyagaikwad369)
 - GitHub: [Your GitHub](https://github.com/SupriyaPG)
