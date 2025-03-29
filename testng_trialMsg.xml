@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="Selenium_Basics">
+    <test verbose="2" preserve-order="true" name="Selenium_Basics2" >
         <classes>
-            <class name="com.spgtesting.selenium_Basics.TestSelenium13_miniProject2">
+            <class name="com.spgtesting.selenium_Basics2.TestSlenium15_miniProject3">
 
             </class>
         </classes>
     </test>
 </suite>
+

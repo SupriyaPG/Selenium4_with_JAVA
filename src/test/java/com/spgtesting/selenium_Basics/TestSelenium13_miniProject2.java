@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class TestSelenium12_miniProject2 {
+public class TestSelenium13_miniProject2 {
     @Test
     @Description("Verify current URL")
     public  void test_curaHealthcare() throws Exception{
