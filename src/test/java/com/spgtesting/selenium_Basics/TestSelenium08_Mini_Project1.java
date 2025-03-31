@@ -1,6 +1,7 @@
 package com.spgtesting.selenium_Basics;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
@@ -8,8 +9,9 @@ import org.testng.annotations.Test;
 
 import  static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class TestSelenium08_Mini_Project {
+public class TestSelenium08_Mini_Project1 {
 
+    @Owner("Supriya G")
     @Test
     @Description("Testing given heading is available on https://www.google.com/  page")
     public void testKatalon() throws Exception {

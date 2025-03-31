@@ -1,6 +1,7 @@
 package com.spgtesting.selenium_Basics;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -8,6 +9,7 @@ import org.testng.annotations.Test;
 
 public class TestSelenium04 {
 
+    @Owner("Supriya G")
     @Test
     @Description
     public void testBrowsers(){

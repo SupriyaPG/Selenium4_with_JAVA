@@ -1,6 +1,7 @@
 package com.spgtesting.selenium_Basics2;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,6 +11,7 @@ import org.testng.annotations.Test;
 
 public class TestSelenium14_findElements {
 
+    @Owner("Supriya G")
     @Test
     @Description("Verify VWO")
     public void test_login_VWO(){

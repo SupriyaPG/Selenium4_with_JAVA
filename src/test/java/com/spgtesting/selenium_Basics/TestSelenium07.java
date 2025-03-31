@@ -1,6 +1,7 @@
 package com.spgtesting.selenium_Basics;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
@@ -11,6 +12,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class TestSelenium07 {
 
+    @Owner("Supriya G")
     @Test
     @Description("Verifying google title")
     public  void testGoogle_assertion(){

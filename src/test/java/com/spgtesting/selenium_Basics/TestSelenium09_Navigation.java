@@ -1,5 +1,6 @@
 package com.spgtesting.selenium_Basics;
 
+import io.qameta.allure.Owner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
@@ -10,6 +11,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class TestSelenium09_Navigation {
 
+    @Owner("Supriya G")
     @Test
     @Description("Verify google navigation functionality")
     public void testGoogle_Navigation() throws  Exception{

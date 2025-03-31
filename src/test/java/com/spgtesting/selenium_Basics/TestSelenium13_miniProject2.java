@@ -1,6 +1,7 @@
 package com.spgtesting.selenium_Basics;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -12,12 +13,14 @@ import org.testng.annotations.Test;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class TestSelenium13_miniProject2 {
+
+    @Owner("Supriya G")
     @Test
     @Description("Verify current URL")
     public  void test_curaHealthcare() throws Exception{
 
         EdgeOptions edgeOptions=new EdgeOptions();
-        edgeOptions.addArguments("--start-maximised");
+        edgeOptions.addArguments("--start-maximized");
 
         WebDriver driver=new EdgeDriver(edgeOptions);
         driver.get("https://katalon-demo-cura.herokuapp.com/");

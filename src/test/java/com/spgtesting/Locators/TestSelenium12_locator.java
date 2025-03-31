@@ -1,6 +1,7 @@
-package com.spgtesting.selenium_Basics;
+package com.spgtesting.Locators;
 
 import io.qameta.allure.Description;
+import io.qameta.allure.Owner;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,6 +12,7 @@ import org.testng.annotations.Test;
 
 public class TestSelenium12_locator {
 
+    @Owner("Supriya G")
     @Test
     @Description("open url")
     public  void test() throws Exception{
