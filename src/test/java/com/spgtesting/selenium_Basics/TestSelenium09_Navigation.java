@@ -17,19 +17,16 @@ public class TestSelenium09_Navigation {
     public void testGoogle_Navigation() throws  Exception{
 
         WebDriver driver=new EdgeDriver();
-        driver.get("https://google.com");
-        Thread.sleep(3000);  // to hold so that we can see
+
+        driver.navigate().to("https://google.com");
+        driver.manage().window().maximize();
         driver.navigate().to("https://bing.com");
+        Thread.sleep(3000);  // to hold so that we can see
         driver.navigate().back();
         Thread.sleep(3000);
         driver.navigate().refresh();
         Thread.sleep(2000);
         driver.navigate().forward();
-
-        Thread.sleep(4000);
-
         driver.quit();
-
-
     }
 }
