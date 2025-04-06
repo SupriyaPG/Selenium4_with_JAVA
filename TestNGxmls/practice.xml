@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Practice" >
+        <classes>
+            <class name="com.spgtesting.Practice.HandlingAlerts.TS_06_Normal_Alerts"> </class>
+            <class name="com.spgtesting.Practice.HandlingAlerts.TS_07_Cnfirmation_Alert"> </class>
+            <class name="com.spgtesting.Practice.HandlingAlerts.TS_08_Prompt_Alert"> </class>
+        </classes>
+    </test>
+</suite>
+
