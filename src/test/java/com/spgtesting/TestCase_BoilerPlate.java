@@ -3,6 +3,7 @@ package com.spgtesting;
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.edge.EdgeOptions;
 import org.testng.annotations.AfterTest;
@@ -11,7 +12,8 @@ import org.testng.annotations.Test;
 
 public class TestCase_BoilerPlate {
 
-    public EdgeDriver driver;
+    //public WebDriver driver;
+    public  EdgeDriver driver;
 
     @BeforeTest
     public void openBrowser(){
@@ -19,6 +21,7 @@ public class TestCase_BoilerPlate {
         EdgeOptions edgeOptions=new EdgeOptions();
         edgeOptions.addArguments("--gest");
         driver =new EdgeDriver(edgeOptions);
+       // driver=new ChromeDriver(edgeOptions);
     }
 
     @Test
