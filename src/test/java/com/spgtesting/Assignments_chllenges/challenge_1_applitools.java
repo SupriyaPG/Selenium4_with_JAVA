@@ -1,4 +1,4 @@
-package com.spgtesting.Assignments;
+package com.spgtesting.Assignments_chllenges;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -9,10 +9,9 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class Assignment_applitools {
+public class challenge_1_applitools {
 
     @Test
     @Description("Calculate the Total Amount of Money Spent ")

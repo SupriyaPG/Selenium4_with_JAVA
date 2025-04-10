@@ -1,4 +1,4 @@
-package com.spgtesting.Assignments;
+package com.spgtesting.Assignments_chllenges;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;

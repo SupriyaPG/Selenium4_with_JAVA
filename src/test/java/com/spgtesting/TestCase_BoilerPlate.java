@@ -21,6 +21,7 @@ public class TestCase_BoilerPlate {
         EdgeOptions edgeOptions=new EdgeOptions();
         edgeOptions.addArguments("--gest");
         driver =new EdgeDriver(edgeOptions);
+        driver.manage().window().maximize();
        // driver=new ChromeDriver(edgeOptions);
     }
 

@@ -1,4 +1,4 @@
-package com.spgtesting.Assignments;
+package com.spgtesting.Assignments_chllenges;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
@@ -8,7 +8,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Assignment_demoqa {
+public class challenge_2_demoqa1 {
 
     @Test
     @Description()
