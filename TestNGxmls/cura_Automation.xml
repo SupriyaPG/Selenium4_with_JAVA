@@ -3,7 +3,7 @@
 <suite name="All Test Suite">
     <test verbose="2" preserve-order="true" name="Assignments" >
         <classes>
-            <class name="com.spgtesting.Assignments.Assignment_Automate_CURA">
+            <class name="com.spgtesting.Assignments_chllenges.Assignment_Automate_CURA">
 
             </class>
         </classes>
