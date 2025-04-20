@@ -23,7 +23,7 @@ public class waitHelpers {
     }
 
     public static void implicitWait(WebDriver driver,int time){
-driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(time, TimeUnit.SECONDS);
 
     }
 
