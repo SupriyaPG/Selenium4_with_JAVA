@@ -12,9 +12,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-import static java.lang.Boolean.parseBoolean;
-
-public class TS_21_Assignment {
+public class TS_21_Assignment_lowestPrice {
 
     WebDriver driver=new EdgeDriver();
 
@@ -51,10 +49,13 @@ public class TS_21_Assignment {
         System.out.println(rows);
         System.out.println(col);
 
+        int i;
+        int j=0;
        double lowerPrice=0.0;
-        for (int i=1;i<rows;i++)
+        for ( i=1;i<rows;i++)
                 {
                        String price = driver.findElement(By.xpath("//table[@class='table']//tr["+i+"]//td[6]")).getText();
+                       String button=driver.findElement(By.xpath("//table[@class='table']//tr["+i+"]//td[1]")).getText();
                        String str=price.replace("$","");
                        // System.out.println("Price :"+str);
                         double temp= Double.parseDouble(str);
@@ -65,15 +66,38 @@ public class TS_21_Assignment {
 
                         if (lowerPrice>temp) {
                               lowerPrice=temp;
+                              j=i;
 
                            }
                 }
         System.out.println("Lowerprice:"+lowerPrice);
         //String flight=driver.findElement(By.xpath("//td[normalize-space()="+$+"+lowerPrice"])).  // //td[normalize-space()='$200.98']
+        System.out.println("j :"+j);
+        driver.findElement(By.xpath("//table[@class='table']//tr["+j+"]//td[1]")).click();
+
+        driver.findElement(By.id("inputName")).sendKeys("John");
+        driver.findElement(By.id("address")).sendKeys("Link Road");
+        driver.findElement(By.id("city")).sendKeys("Aroura");
+        driver.findElement(By.id("state")).sendKeys("Texas");
+        driver.findElement(By.id("zipCode")).sendKeys("54682");
+        WebElement cardTypeDropDown= driver.findElement(By.id("cardType"));
+        Select type=new Select(cardTypeDropDown);
+        type.selectByVisibleText("Visa");
+        driver.findElement(By.id("creditCardNumber")).sendKeys("548796321546");
+        driver.findElement(By.id("creditCardMonth")).sendKeys("6");
+        driver.findElement(By.id("creditCardYear")).sendKeys("2030");
+        driver.findElement(By.id("nameOnCard")).sendKeys("John");
+
+        driver.findElement(By.xpath("//input[@class='btn btn-primary']")).click();
+
+        String msg=driver.findElement(By.xpath("//h1[normalize-space()='Thank you for your purchase today!']")).getText();
+
+        Assert.assertEquals(msg,"Thank you for your purchase today!");
+
 
     }
 
-    @AfterTest
+  @AfterTest
     public void closeBrowser()
     {
         try {
