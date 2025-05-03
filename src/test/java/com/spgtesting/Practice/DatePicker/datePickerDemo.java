@@ -6,7 +6,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 
 import java.time.Duration;
 
-
 public class datePickerDemo {
 
     public static void main(String[] args) {
@@ -29,19 +28,6 @@ public class datePickerDemo {
         //Method 2 By using date picker
         driver.findElement(By.xpath("//input[@id='datepicker']")).click(); //open date picker
 
-        //select  month and year
-        while (true)
-        {
-            String currentMonth=driver.findElement(By.xpath("//span[@class='ui-datepicker-month']")).getText();
-            String currentYear=driver.findElement(By.xpath("//span[@class='ui-datepicker-year']")).getText();
-
-            if(currentMonth.equals(requiredMonth) && currentYear.equals(requiredYear))
-            {
-                break;
-            }
-            driver.findElement(By.xpath("//span[@class='ui-icon ui-icon-circle-triangle-e']")).click();
-
-        }
 
 
 
