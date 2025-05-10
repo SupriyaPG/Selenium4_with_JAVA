@@ -2,7 +2,6 @@ package com.spgtesting.Action_Class;
 
 import io.qameta.allure.Description;
 import io.qameta.allure.Owner;
-import org.checkerframework.checker.units.qual.A;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -13,10 +12,6 @@ import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
-import javax.swing.*;
-
-import static java.lang.Thread.sleep;
 
 
 public class TestSelenium27_ActionClass {
