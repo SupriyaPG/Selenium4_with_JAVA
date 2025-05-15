@@ -19,6 +19,9 @@ public class rightClickAction {
         // right click action
         act.contextClick(rightClick_Button).build().perform();
 
+        driver.findElement(By.xpath("//span[normalize-space()='Copy']")).click();
+        driver.switchTo().alert().accept();
+
         driver.quit();
 
 
