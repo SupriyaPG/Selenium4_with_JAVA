@@ -27,17 +27,20 @@ public class openNewWindow {
         WebElement regLink=driver.findElement(By.xpath("/html[1]/body[1]/nav[1]/div[1]/div[2]/ul[1]/li[2]/ul[1]/li[1]/a[normalize-space()='Register']"));
         act.keyDown(Keys.CONTROL).click(regLink).keyUp(Keys.CONTROL).perform();
 
+        //getting window handles
         List<String> ids=new ArrayList(driver.getWindowHandles());
+        //switching new window
         driver.switchTo().window(ids.get(1));
 
-        WebElement registrationPage=driver.findElement(By.cssSelector("div[id='content'] h1"));
-        if(registrationPage.equals("Register Account"))
-        {
-            System.out.println(registrationPage);
+        WebElement registrationPage= (driver.findElement(By.xpath("/html[1]/body[1]/div[2]/div[1]/div[1]/h1[1]")));
+
+        String chk=registrationPage.getText();
+        System.out.println(chk);
+        if(chk.matches("Register Account")) {
+                System.out.println("Registration Page display");
         }
 
         driver.quit();
-
 
     }
 }
