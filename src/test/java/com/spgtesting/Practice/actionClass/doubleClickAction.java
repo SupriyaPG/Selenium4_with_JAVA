@@ -1,4 +1,4 @@
-package com.spgtesting.Practice;
+package com.spgtesting.Practice.actionClass;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
